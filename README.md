@@ -1,8 +1,5 @@
 # Cadmus
 
-hello<br/>
-world
-
 A framework to make development easier.
 
 # How to implement into your tweak
@@ -17,7 +14,7 @@ Runs UICache.
 
 ## How to use:
 
-``#import <Cadmus/Cadmus.h><br/>
+``#import <Cadmus/Cadmus.h>\
 [Cadmus uicache];``
 
 ## Respring
@@ -26,7 +23,7 @@ Resprings the device.
 
 ## How to use:
 
-``#import <Cadmus/Cadmus.h><br/>
+``#import <Cadmus/Cadmus.h>\
 [Cadmus respring];``
 
 ## Userspace
@@ -35,5 +32,5 @@ Reboots the device's userspace.
 
 ## How to use:
 
-``#import <Cadmus/Cadmus.h><br/>
+``#import <Cadmus/Cadmus.h>\
 [Cadmus userspace];``
