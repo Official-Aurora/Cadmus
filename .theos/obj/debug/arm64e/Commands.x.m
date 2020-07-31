@@ -1,5 +1,6 @@
-// Cadmus : Commands
-// Copyright (c) Aurora Tweaks 2020
+#line 1 "Commands.x"
+
+
 
 #import "Commands.h"
 
@@ -21,6 +22,10 @@
     pid_t pid;
 	const char* args[] = {"launchctl", "reboot", "userspace", NULL, NULL};
 	posix_spawn(&pid, "/bin/launchctl", NULL, NULL, (char* const*)args, NULL);
+}
+
++(void)openUrl:(nullable NSURL *)URL {
+	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:URL] options:@{} completionHandler:nil];
 }
 
 @end

@@ -24,7 +24,7 @@ Resprings the device.
 ## How to use:
 
 #import <Cadmus/Commands.h>\
-[Cadmus respring];
+[Commands respring];
 
 ## Userspace
 
@@ -33,13 +33,4 @@ Reboots the device's userspace.
 ## How to use:
 
 #import <Cadmus/Commands.h>\
-[Cadmus userspace];
-
-## OpenUrl
-
-Opens a url on the device.
-
-## How to use:
-
-#import <Cadmus/Commands.h>\
-[Cadmus openUrl:url];
+[Commands userspace];
