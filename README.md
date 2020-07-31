@@ -14,7 +14,8 @@ Runs UICache.
 
 ## How to use:
 
-``#import <Cadmus/Cadmus.h>\n[Cadmus uicache];``
+``#import <Cadmus/Cadmus.h>  
+[Cadmus uicache];``
 
 ## Respring
 
@@ -22,7 +23,8 @@ Resprings the device.
 
 ## How to use:
 
-``#import <Cadmus/Cadmus.h>\n[Cadmus respring];``
+``#import <Cadmus/Cadmus.h>  
+[Cadmus respring];``
 
 ## Userspace
 
@@ -30,4 +32,5 @@ Reboots the device's userspace.
 
 ## How to use:
 
-``#import <Cadmus/Cadmus.h>\n[Cadmus userspace];``
+``#import <Cadmus/Cadmus.h>  
+[Cadmus userspace];``
