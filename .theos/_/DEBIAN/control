@@ -1,0 +1,10 @@
+Package: com.aurora.libcadmus
+Name: Cadmus
+Architecture: iphoneos-arm
+Description: An awesome framework of some sort!!
+Maintainer: Aurora
+Author: Aurora
+Section: System
+Tag: role::developer
+Version: 0.0.1-1+debug
+Installed-Size: 156
