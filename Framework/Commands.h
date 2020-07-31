@@ -1,4 +1,4 @@
-// Cadmus
+// Cadmus / Commands
 // Copyright (c) Aurora Tweaks 2020
 
 #import <spawn.h>

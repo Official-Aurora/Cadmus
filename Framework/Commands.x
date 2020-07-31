@@ -1,7 +1,7 @@
-// Cadmus
+// Cadmus / Commands
 // Copyright (c) Aurora Tweaks 2020
 
-#import "Cadmus.h"
+#import "Commands.h"
 
 @implementation Cadmus
 
