@@ -34,3 +34,12 @@ Reboots the device's userspace.
 
 #import <Cadmus/Commands.h>\
 [Cadmus userspace];
+
+## OpenUrl
+
+Opens a url on the device.
+
+## How to use:
+
+#import <Cadmus/Commands.h>\
+[Cadmus openUrl:url];
