@@ -12,7 +12,7 @@ Simply clone the repository, build the Framework, add ``$(TWEAK_NAME)_EXTRA_FRAM
 
 Runs UICache.
 
-## How to use:
+### How to use:
 
 #import <Cadmus/Commands.h>\
 [Cadmus uicache];
@@ -21,7 +21,7 @@ Runs UICache.
 
 Resprings the device.
 
-## How to use:
+### How to use:
 
 #import <Cadmus/Commands.h>\
 [Commands respring];
@@ -30,7 +30,7 @@ Resprings the device.
 
 Reboots the device's userspace.
 
-## How to use:
+### How to use:
 
 #import <Cadmus/Commands.h>\
 [Commands userspace];
