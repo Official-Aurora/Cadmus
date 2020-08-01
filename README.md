@@ -26,7 +26,12 @@ Runs UICache.
 ### How to use:
 
     #import <Cadmus/Commands.h>
-    [Cadmus uicache];
+    %hook SpringBoard
+    -(void)viewDidLoad {
+        %orig;
+        [Commands uicache];
+    }
+    %end
 
 ## Respring
 
@@ -35,7 +40,12 @@ Resprings the device.
 ### How to use:
 
     #import <Cadmus/Commands.h>
-    [Commands respring];
+    %hook SpringBoard
+    -(void)viewDidLoad {
+        %orig;
+        [Commands respring];
+    }
+    %end
 
 ## Userspace
 
@@ -44,4 +54,9 @@ Reboots the device's userspace.
 ### How to use:
 
     #import <Cadmus/Commands.h>
-    [Commands userspace];
+    %hook SpringBoard
+    -(void)viewDidLoad {
+        %orig;
+        [Commands userspace];
+    }
+    %end
