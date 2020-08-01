@@ -10,8 +10,8 @@ Simply clone the repository, build the Framework, add ``$(TWEAK_NAME)_EXTRA_FRAM
 
 Note: For any commands to run, you must let it run like so:
 
-    #import <Cadmus/Commands.h>
-    %hook Commands
+    #import <Cadmus/AUCommands.h>
+    %hook AUCommands
     -(BOOL)shouldRun {
         return YES;
     }
@@ -25,11 +25,11 @@ Runs UICache.
 
 ### How to use:
 
-    #import <Cadmus/Commands.h>
+    #import <Cadmus/AUCommands.h>
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [Commands uicache];
+        [AUCommands uicache];
     }
     %end
 
@@ -39,11 +39,11 @@ Resprings the device.
 
 ### How to use:
 
-    #import <Cadmus/Commands.h>
+    #import <Cadmus/AUCommands.h>
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [Commands respring];
+        [AUCommands respring];
     }
     %end
 
@@ -53,10 +53,10 @@ Reboots the device's userspace.
 
 ### How to use:
 
-    #import <Cadmus/Commands.h>
+    #import <Cadmus/AUCommands.h>
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [Commands userspace];
+        [AUCommands userspace];
     }
     %end

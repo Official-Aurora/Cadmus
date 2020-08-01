@@ -1,9 +1,9 @@
-// Cadmus : Commands
+// Cadmus : AUCommands
 // Copyright (c) Aurora Tweaks 2020
 
-#import "Commands.h"
+#import "AUCommands.h"
 
-@implementation Commands
+@implementation AUCommands
 
 -(BOOL)shouldRun {
 	return NO;
