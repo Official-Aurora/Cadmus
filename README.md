@@ -68,3 +68,19 @@ Reboots the device's userspace.
     %end
 
 Note: If you want the device to vibrate after it reboots the userspace, replace NO with YES.
+
+## Custom Command
+
+Runs a custom command on the device.
+
+### How to use:
+
+    #import <Cadmus/AUCommands.h>
+    %hook SpringBoard
+    -(void)viewDidLoad {
+        %orig;
+        [AUCommands userspace:[NSString stringWithFormat:@"uname -a"]];
+    }
+    %end
+
+Note: If you want the device to vibrate after it reboots the userspace, replace NO with YES.
