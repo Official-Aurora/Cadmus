@@ -5,6 +5,7 @@
 #import <Foundation/Foundation.h>
 
 @interface Commands : NSObject
+-(void)shouldRun;
 -(void)respring;
 -(void)uicache;
 -(void)userspace;

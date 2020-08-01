@@ -5,22 +5,32 @@
 
 @implementation Commands
 
+-(BOOL)shouldRun {
+	return NO;
+}
+
 -(void)respring {
-    pid_t pid;
-	const char* args[] = {"killall", "-9", "SpringBoard", NULL, NULL};
-	posix_spawn(&pid, "/usr/bin/killall", NULL, NULL, (char* const*)args, NULL);
+	if (shouldRun) {
+    	pid_t pid;
+		const char* args[] = {"killall", "-9", "SpringBoard", NULL, NULL};
+		posix_spawn(&pid, "/usr/bin/killall", NULL, NULL, (char* const*)args, NULL);
+	} else {}
 }
 
 -(void)uicache {
-    pid_t pid;
-	const char* args[] = {"uicache", NULL, NULL};
-	posix_spawn(&pid, "/usr/bin/uicache", NULL, NULL, (char* const*)args, NULL);
+	if (shouldRun) {
+    	pid_t pid;
+		const char* args[] = {"uicache", NULL, NULL};
+		posix_spawn(&pid, "/usr/bin/uicache", NULL, NULL, (char* const*)args, NULL);
+	} else {}
 }
 
 -(void)userspace {
-    pid_t pid;
-	const char* args[] = {"launchctl", "reboot", "userspace", NULL, NULL};
-	posix_spawn(&pid, "/bin/launchctl", NULL, NULL, (char* const*)args, NULL);
+	if (shouldRun) {
+    	pid_t pid;
+		const char* args[] = {"launchctl", "reboot", "userspace", NULL, NULL};
+		posix_spawn(&pid, "/bin/launchctl", NULL, NULL, (char* const*)args, NULL);
+	} else {}
 }
 
 @end
