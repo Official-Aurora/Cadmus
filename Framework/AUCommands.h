@@ -3,7 +3,7 @@
 
 #import <Foundation/Foundation.h>
 #import <AudioToolbox/AudioServices.h>
-#import "Headers/NSTask.h"
+#import "NSTask.h"
 #include <unistd.h>
 
 @interface AUCommands : NSObject

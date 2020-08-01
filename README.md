@@ -69,6 +69,34 @@ Reboots the device's userspace.
 
 Note: If you want the device to vibrate after it reboots the userspace, replace NO with YES.
 
+### How to use:
+
+    #import <Cadmus/AUCommands.h>
+    %hook SpringBoard
+    -(void)viewDidLoad {
+        %orig;
+        [AUCommands respring:NO];
+    }
+    %end
+
+Note: If you want the device to vibrate after it resprings, replace NO with YES.
+
+## LDRestart
+
+Runs ldrestart on the device.
+
+### How to use:
+
+    #import <Cadmus/AUCommands.h>
+    %hook SpringBoard
+    -(void)viewDidLoad {
+        %orig;
+        [AUCommands ldrestart:NO];
+    }
+    %end
+
+Note: If you want the device to vibrate after it runs ldrestart, replace NO with YES.
+
 ## Custom Command
 
 Runs a custom command on the device.
