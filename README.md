@@ -10,11 +10,11 @@ Simply clone the repository, build the Framework, add ``$(TWEAK_NAME)_EXTRA_FRAM
 
 Note: For any commands to run, you must let it run like so:
 
-    #import <Cadmus/Commands.h>\
-    %hook Commands\
-    -(BOOL)shouldRun {\
-        return YES;\
-    }\
+    #import <Cadmus/Commands.h>
+    %hook Commands
+    -(BOOL)shouldRun {
+        return YES;
+    }
     %end
 
 Replace Commands with whatever Cadmus class you'd like to run.
@@ -25,8 +25,8 @@ Runs UICache.
 
 ### How to use:
 
-#import <Cadmus/Commands.h>\
-[Cadmus uicache];
+    #import <Cadmus/Commands.h>
+    [Cadmus uicache];
 
 ## Respring
 
@@ -34,8 +34,8 @@ Resprings the device.
 
 ### How to use:
 
-#import <Cadmus/Commands.h>\
-[Commands respring];
+    #import <Cadmus/Commands.h>
+    [Commands respring];
 
 ## Userspace
 
@@ -43,5 +43,5 @@ Reboots the device's userspace.
 
 ### How to use:
 
-#import <Cadmus/Commands.h>\
-[Commands userspace];
+    #import <Cadmus/Commands.h>
+    [Commands userspace];
