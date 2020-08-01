@@ -13,9 +13,9 @@ Note: For any commands to run, you must let it run like so:
 #import <Cadmus/Commands.h>\
 %hook Commands\
 -(BOOL)shouldRun {\
-    return YES;\
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return YES;\
 }\
-%end\
+%end
 
 Replace Commands with whatever Cadmus class you'd like to run.\
 
