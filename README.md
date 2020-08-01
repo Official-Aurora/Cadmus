@@ -13,7 +13,7 @@ Note: For any commands to run, you must let it run like so:
     #import <Cadmus/Commands.h>\
     %hook Commands\
     -(BOOL)shouldRun {\
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return YES;\
+        return YES;\
     }\
     %end
 
