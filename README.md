@@ -17,7 +17,7 @@ Note: For any commands to run, you must let it run like so:
     }
     %end
 
-Replace Commands with whatever Cadmus class you'd like to run.
+Replace ``AUCommands`` with whatever Cadmus class you'd like to run.
 
 ## UICache
 
