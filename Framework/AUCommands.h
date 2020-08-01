@@ -3,10 +3,11 @@
 
 #import <spawn.h>
 #import <Foundation/Foundation.h>
+#import <AudioToolbox/AudioServices.h>
 
 @interface AUCommands : NSObject
 +(bool)shouldRun;
--(void)respring;
--(void)uicache;
--(void)userspace;
+-(void)respring:(bool)vibrate;
+-(void)uicache:(bool)vibrate;
+-(void)userspace:(bool)vibrate;
 @end

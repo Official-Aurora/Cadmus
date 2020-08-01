@@ -27,9 +27,11 @@ Runs UICache.
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [AUCommands uicache];
+        [AUCommands uicache:NO];
     }
     %end
+
+Note: If you want the device to vibrate after it runs uicache, replace NO with YES.
 
 ## Respring
 
@@ -41,9 +43,11 @@ Resprings the device.
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [AUCommands respring];
+        [AUCommands respring:NO];
     }
     %end
+
+Note: If you want the device to vibrate after it resprings, replace NO with YES.
 
 ## Userspace
 
@@ -55,6 +59,8 @@ Reboots the device's userspace.
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [AUCommands userspace];
+        [AUCommands userspace:NO];
     }
     %end
+
+Note: If you want the device to vibrate after it reboots the userspace, replace NO with YES.
