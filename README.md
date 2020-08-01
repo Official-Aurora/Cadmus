@@ -110,5 +110,3 @@ Runs a custom command on the device.
         [AUCommands userspace:[NSString stringWithFormat:@"uname -a"]];
     }
     %end
-
-Note: If you want the device to vibrate after it reboots the userspace, replace NO with YES.
