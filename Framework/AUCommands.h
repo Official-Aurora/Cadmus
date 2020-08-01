@@ -5,7 +5,7 @@
 #import <Foundation/Foundation.h>
 
 @interface AUCommands : NSObject
--(void)shouldRun;
++(bool)shouldRun;
 -(void)respring;
 -(void)uicache;
 -(void)userspace;

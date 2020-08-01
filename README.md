@@ -12,7 +12,7 @@ Note: For any commands to run, you must let it run like so:
 
     #import <Cadmus/AUCommands.h>
     %hook AUCommands
-    -(BOOL)shouldRun {
+    +(BOOL)shouldRun {
         return YES;
     }
     %end
