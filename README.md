@@ -10,14 +10,14 @@ Simply clone the repository, build the Framework, add ``$(TWEAK_NAME)_EXTRA_FRAM
 
 Note: For any commands to run, you must let it run like so:
 
-#import <Cadmus/Commands.h>\
-%hook Commands\
--(BOOL)shouldRun {\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return YES;\
-}\
-%end
+    #import <Cadmus/Commands.h>\
+    %hook Commands\
+    -(BOOL)shouldRun {\
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return YES;\
+    }\
+    %end
 
-Replace Commands with whatever Cadmus class you'd like to run.\
+Replace Commands with whatever Cadmus class you'd like to run.
 
 ## UICache
 
