@@ -6,7 +6,7 @@ A framework to make development easier.
 
 Simply clone the repository, build the Framework, add ``$(TWEAK_NAME)_EXTRA_FRAMEWORKS += Cadmus`` to your tweak's Makefile and then add  "com.aurora.cadmus" to your control file's dependencies.
 
-# Commands
+# AUCommands
 
 Note: For any commands to run, you must let it run like so:
 
@@ -16,8 +16,6 @@ Note: For any commands to run, you must let it run like so:
         return YES;
     }
     %end
-
-Replace ``AUCommands`` with whatever Cadmus class you'd like to run.
 
 ## UICache
 
