@@ -60,6 +60,7 @@
 
 -(void)customCommand:(NSString *)command :(bool)vibrate {
 	if ([AUCommands shouldRun]) {
+		setuid(0);
     	NSTask *task = [[NSTask alloc] init];
 		[task setLaunchPath:@"/bin/sh"];
         [task setArguments:@[@"-c", command]];
