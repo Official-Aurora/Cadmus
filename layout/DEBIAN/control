@@ -1,6 +1,6 @@
 Package: com.aurora.cadmus
 Name: Cadmus
-Version: 1.0
+Version: 1.0-b1
 Architecture: iphoneos-arm
 Description: A framework to make iOS Development easier.
 Maintainer: Aurora
