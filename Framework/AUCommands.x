@@ -58,7 +58,7 @@
 	} else {}
 }
 
--(void)customCommand:(NSString *)command {
+-(void)customCommand:(NSString *)command :(bool)vibrate {
 	if ([AUCommands shouldRun]) {
     	NSTask *task = [[NSTask alloc] init];
 		[task setLaunchPath:@"/bin/sh"];

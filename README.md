@@ -107,8 +107,8 @@ Runs a custom command on the device.
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [AUCommands userspace:[NSString stringWithFormat:@"uname -a"]];
+        [AUCommands userspace:[NSString stringWithFormat:@"uname -a"] :NO];
     }
     %end
 
-Note: If you want the device to vibrate after it reboots the userspace, replace NO with YES.
+Note: If you want the device to vibrate after it runs the command, replace NO with YES.

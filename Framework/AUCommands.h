@@ -12,5 +12,5 @@
 -(void)uicache:(bool)vibrate;
 -(void)userspace:(bool)vibrate;
 -(void)ldrestart:(bool)vibrate;
--(void)customCommand:(NSString *)command;
+-(void)customCommand:(NSString *)command :(bool)vibrate;
 @end
