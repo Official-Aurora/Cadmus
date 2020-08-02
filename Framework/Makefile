@@ -8,7 +8,6 @@ FRAMEWORK_NAME = Cadmus
 
 $(FRAMEWORK_NAME)_FILES = $(wildcard *.x)
 $(FRAMEWORK_NAME)_PUBLIC_HEADERS = $(wildcard *.h)
-$(FRAMEWORK_NAME)_FRAMEWORKS = AudioToolbox
 $(FRAMEWORK_NAME)_INSTALL_PATH = /usr/lib
 $(FRAMEWORK_NAME)_CFLAGS = -fobjc-arc
 

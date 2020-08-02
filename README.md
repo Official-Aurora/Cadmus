@@ -31,11 +31,9 @@ Runs UICache.
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [AUCommands uicache:NO];
+        [AUCommands uicache];
     }
     %end
-
-Note: If you want the device to vibrate after it runs uicache, replace NO with YES.
 
 ## Respring
 
@@ -47,11 +45,9 @@ Resprings the device.
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [AUCommands respring:NO];
+        [AUCommands respring];
     }
     %end
-
-Note: If you want the device to vibrate after it resprings, replace NO with YES.
 
 ## Userspace
 
@@ -63,11 +59,9 @@ Reboots the device's userspace.
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [AUCommands userspace:NO];
+        [AUCommands userspace;
     }
     %end
-
-Note: If you want the device to vibrate after it reboots the userspace, replace NO with YES.
 
 ### How to use:
 
@@ -75,11 +69,9 @@ Note: If you want the device to vibrate after it reboots the userspace, replace 
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [AUCommands respring:NO];
+        [AUCommands respring];
     }
     %end
-
-Note: If you want the device to vibrate after it resprings, replace NO with YES.
 
 ## LDRestart
 
@@ -91,11 +83,9 @@ Runs ldrestart on the device.
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [AUCommands ldrestart:NO];
+        [AUCommands ldrestart];
     }
     %end
-
-Note: If you want the device to vibrate after it runs ldrestart, replace NO with YES.
 
 ## Custom Command
 
@@ -107,8 +97,6 @@ Runs a custom command on the device.
     %hook SpringBoard
     -(void)viewDidLoad {
         %orig;
-        [AUCommands userspace:[NSString stringWithFormat:@"uname -a"] :NO];
+        [AUCommands userspace:[NSString stringWithFormat:@"uname -a"]];
     }
     %end
-
-Note: If you want the device to vibrate after it runs the command, replace NO with YES.

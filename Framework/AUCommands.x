@@ -9,56 +9,44 @@
 	return NO;
 }
 
--(void)respring:(bool)vibrate {
+-(void)respring {
 	if ([AUCommands shouldRun]) {
     	NSTask *task = [[NSTask alloc] init];
 		[task setLaunchPath:@"/usr/bin/killall"];
         [task setArguments:@[@"-9", @"SpringBoard"]];
 		[task launch];
-		if (vibrate) {
-			AudioServicesPlaySystemSound(1519);
-		}
 	} else {}
 }
 
--(void)uicache:(bool)vibrate {
+-(void)uicache {
 	if ([AUCommands shouldRun]) {
     	NSTask *task = [[NSTask alloc] init];
 		[task setLaunchPath:@"/usr/bin/uicache"];
         [task setArguments:@[]];
 		[task launch];
-		if (vibrate) {
-			AudioServicesPlaySystemSound(1519);
-		}
 	} else {}
 }
 
--(void)userspace:(bool)vibrate {
+-(void)userspace {
 	if ([AUCommands shouldRun]) {
     	NSTask *task = [[NSTask alloc] init];
 		[task setLaunchPath:@"/bin/launchctl"];
         [task setArguments:@[@"reboot", @"userspace"]];
 		[task launch];
-		if (vibrate) {
-			AudioServicesPlaySystemSound(1519);
-		}
 	} else {}
 }
 
--(void)ldrestart:(bool)vibrate {
+-(void)ldrestart {
 	if ([AUCommands shouldRun]) {
 		setuid(0);
     	NSTask *task = [[NSTask alloc] init];
 		[task setLaunchPath:@"/usr/bin/ldrestart"];
         [task setArguments:@[]];
 		[task launch];
-		if (vibrate) {
-			AudioServicesPlaySystemSound(1519);
-		}
 	} else {}
 }
 
--(void)customCommand:(NSString *)command :(bool)vibrate {
+-(void)customCommand:(NSString *)command {
 	if ([AUCommands shouldRun]) {
 		setuid(0);
     	NSTask *task = [[NSTask alloc] init];

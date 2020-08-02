@@ -8,9 +8,9 @@
 
 @interface AUCommands : NSObject
 +(bool)shouldRun;
--(void)respring:(bool)vibrate;
--(void)uicache:(bool)vibrate;
--(void)userspace:(bool)vibrate;
--(void)ldrestart:(bool)vibrate;
--(void)customCommand:(NSString *)command :(bool)vibrate;
+-(void)respring;
+-(void)uicache;
+-(void)userspace;
+-(void)ldrestart;
+-(void)customCommand:(NSString *)command;
 @end
