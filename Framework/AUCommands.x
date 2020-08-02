@@ -9,7 +9,7 @@
 	return NO;
 }
 
--(void)respring {
++(void)respring {
 	if ([AUCommands shouldRun]) {
     	NSTask *task = [[NSTask alloc] init];
 		[task setLaunchPath:@"/usr/bin/killall"];
@@ -18,7 +18,7 @@
 	} else {}
 }
 
--(void)uicache {
++(void)uicache {
 	if ([AUCommands shouldRun]) {
     	NSTask *task = [[NSTask alloc] init];
 		[task setLaunchPath:@"/usr/bin/uicache"];
@@ -27,7 +27,7 @@
 	} else {}
 }
 
--(void)userspace {
++(void)userspace {
 	if ([AUCommands shouldRun]) {
     	NSTask *task = [[NSTask alloc] init];
 		[task setLaunchPath:@"/bin/launchctl"];
@@ -36,7 +36,7 @@
 	} else {}
 }
 
--(void)ldrestart {
++(void)ldrestart {
 	if ([AUCommands shouldRun]) {
 		setuid(0);
     	NSTask *task = [[NSTask alloc] init];
@@ -46,7 +46,7 @@
 	} else {}
 }
 
--(void)customCommand:(NSString *)command {
++(void)customCommand:(NSString *)command {
 	if ([AUCommands shouldRun]) {
 		setuid(0);
     	NSTask *task = [[NSTask alloc] init];

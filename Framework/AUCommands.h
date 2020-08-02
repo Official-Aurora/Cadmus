@@ -8,9 +8,9 @@
 
 @interface AUCommands : NSObject
 +(bool)shouldRun;
--(void)respring;
--(void)uicache;
--(void)userspace;
--(void)ldrestart;
--(void)customCommand:(NSString *)command;
++(void)respring;
++(void)uicache;
++(void)userspace;
++(void)ldrestart;
++(void)customCommand:(NSString *)command;
 @end

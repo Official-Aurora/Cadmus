@@ -29,7 +29,7 @@ Runs UICache.
 
     #import <Cadmus/AUCommands.h>
     %hook SpringBoard
-    -(void)viewDidLoad {
+    +(void)viewDidLoad {
         %orig;
         [AUCommands uicache];
     }
@@ -43,7 +43,7 @@ Resprings the device.
 
     #import <Cadmus/AUCommands.h>
     %hook SpringBoard
-    -(void)viewDidLoad {
+    +(void)viewDidLoad {
         %orig;
         [AUCommands respring];
     }
@@ -57,7 +57,7 @@ Reboots the device's userspace.
 
     #import <Cadmus/AUCommands.h>
     %hook SpringBoard
-    -(void)viewDidLoad {
+    +(void)viewDidLoad {
         %orig;
         [AUCommands userspace;
     }
@@ -67,7 +67,7 @@ Reboots the device's userspace.
 
     #import <Cadmus/AUCommands.h>
     %hook SpringBoard
-    -(void)viewDidLoad {
+    +(void)viewDidLoad {
         %orig;
         [AUCommands respring];
     }
@@ -81,7 +81,7 @@ Runs ldrestart on the device.
 
     #import <Cadmus/AUCommands.h>
     %hook SpringBoard
-    -(void)viewDidLoad {
+    +(void)viewDidLoad {
         %orig;
         [AUCommands ldrestart];
     }
@@ -95,8 +95,8 @@ Runs a custom command on the device.
 
     #import <Cadmus/AUCommands.h>
     %hook SpringBoard
-    -(void)viewDidLoad {
+    +(void)viewDidLoad {
         %orig;
-        [AUCommands userspace:[NSString stringWithFormat:@"uname -a"]];
+        [AUCommands userspace:@"uname -a"];
     }
     %end
