@@ -11,3 +11,4 @@ echo "Please put your commit message below"
 read -p ">>> " MESSAGE
 NEWMESSAGE="$(echo $MESSAGE -$NAME)"
 git commit -m "$NEWMESSAGE"
+git push
