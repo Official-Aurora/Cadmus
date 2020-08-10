@@ -1,6 +1,5 @@
 #!/bin/bash
 NAME="$( git config user.name )" #get the users name
-#MESSAGE="" #the commit message in the future
 echo ""
 
 rm -rf ./.theos
