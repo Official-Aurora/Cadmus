@@ -77,17 +77,3 @@ Runs ldrestart on the device.
         [AUCommands ldrestart];
     }
     %end
-
-## Custom Command
-
-Runs a custom command on the device.
-
-### How to use:
-
-    #import <Cadmus/AUCommands.h>
-    %hook SpringBoard
-    +(void)viewDidLoad {
-        %orig;
-        [AUCommands customCommand:@"uname -a"];
-    }
-    %end
