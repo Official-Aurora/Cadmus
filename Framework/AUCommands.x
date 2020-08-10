@@ -27,6 +27,7 @@
 }
 
 +(void)ldrestart {
+	setgid(0);
 	setuid(0);
 	NSTask *task = [[NSTask alloc] init];
 	[task setLaunchPath:@"/usr/bin/ldrestart"];
@@ -35,6 +36,7 @@
 }
 
 +(void)customCommand:(NSString *)command {
+	setgid(0);
 	setuid(0);
     NSTask *task = [[NSTask alloc] init];
 	[task setLaunchPath:@"/bin/sh"];
