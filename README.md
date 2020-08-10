@@ -64,9 +64,11 @@ Reboots the device's userspace.
     }
     %end
 
-## LDRestart
 
-Runs ldrestart on the device.
+## Custom Command
+Runs a custom command on the device.
+
+NOTE: COMMAND CAN NOT BE RUN AS ROOT
 
 ### How to use:
 
@@ -74,6 +76,6 @@ Runs ldrestart on the device.
     %hook SpringBoard
     +(void)viewDidLoad {
         %orig;
-        [AUCommands ldrestart];
+        [AUCommands customCommand:@"uname-a"];
     }
     %end
