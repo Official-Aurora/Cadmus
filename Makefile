@@ -6,6 +6,3 @@ include $(THEOS_MAKE_PATH)/aggregate.mk
 
 before-all::
 	sh $(wildcard clean.sh)
-
-commit:
-	sh $(wildcard commit.sh)

@@ -2,9 +2,12 @@
 
 A framework to make development easier.
 
+Developers: want to contribute? Make a pull request and we'll (most likely) accept it!
+
 # Contributors
 
 - [ajaidan0](https://github.com/ajaidan0)
+- [c0dine](https://github.com/c0dine)
 
 # How to implement into your tweak
 
