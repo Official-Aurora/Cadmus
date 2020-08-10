@@ -1,4 +1,4 @@
-Package: com.aurora.cadmus
+Package: libcadmus
 Name: Cadmus
 Version: 1.0-b1
 Architecture: iphoneos-arm

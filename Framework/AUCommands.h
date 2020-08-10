@@ -7,7 +7,6 @@
 #include <unistd.h>
 
 @interface AUCommands : NSObject
-+(bool)shouldRun;
 +(void)respring;
 +(void)uicache;
 +(void)userspace;
